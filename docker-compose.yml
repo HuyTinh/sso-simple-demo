@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: sso_demo_db_server
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - "5433:5432"
